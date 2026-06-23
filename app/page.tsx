@@ -8,7 +8,6 @@ import Stats from "@/components/Stats";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import BackgroundEffects from "@/components/BackgroundEffects";
-import HeroDashboard from "./HeroDashboard";
 
 export default function Home() {
   return (
