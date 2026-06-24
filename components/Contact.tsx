@@ -56,7 +56,7 @@ ${data.message}
       setStatus("WhatsApp opened and email sent successfully.");
       e.currentTarget.reset();
     } catch {
-      setStatus("WhatsApp opened, but email could not be sent.");
+      setStatus("WhatsApp opened, Email could ncopy may take a few seconds to arrive.");
     } finally {
       setLoading(false);
     }
