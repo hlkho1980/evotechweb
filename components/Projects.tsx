@@ -1,28 +1,32 @@
 "use client";
 
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const projects = [
   {
-    title: "F&B Ordering System",
-    category: "Restaurant Technology",
+    title: "RISE",
+    category: "Bakery Operations System",
     description:
-      "A modern ordering platform for restaurants, cafes and food businesses to manage menus, orders and daily operations efficiently.",
+      "A complete bakery management platform for sales orders, invoicing, delivery tracking, inventory, customer management and real-time reporting.",
     gradient: "from-cyan-500/20 to-blue-500/10",
+    link: "/solutions/rise",
   },
   {
-    title: "Bakery Invoice System",
-    category: "Business Automation",
+    title: "OMNI Serve",
+    category: "Restaurant Operations System",
     description:
-      "An invoicing and sales management system built for bakeries to track customers, orders, payments and business records.",
+      "A modern restaurant solution featuring waiter ordering, table management, kitchen display, cashier operations and business reporting.",
     gradient: "from-purple-500/20 to-pink-500/10",
+    link: "/solutions/omni-serve",
   },
   {
-    title: "Salesman Activity System",
-    category: "Field Sales Tracking",
+    title: "NEXUS",
+    category: "Mobile Sales & Field Operations",
     description:
-      "A digital workflow for moving sales teams to manage customer visits, sales activity, reports and performance tracking.",
+      "Empower your field sales team with mobile ordering, collection tracking, GPS monitoring and a powerful web administration portal.",
     gradient: "from-emerald-500/20 to-cyan-500/10",
+    link: "/solutions/nexus",
   },
 ];
 
@@ -73,9 +77,12 @@ export default function Projects() {
                     {project.description}
                   </p>
 
-                  <div className="mt-8 inline-flex rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition group-hover:border-cyan-400 group-hover:text-cyan-300">
-                    View Case Study →
-                  </div>
+                  <Link
+  href={project.link}
+  className="mt-8 inline-flex rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition group-hover:border-cyan-400 group-hover:text-cyan-300"
+>
+  View Solution →
+</Link>
                 </div>
 
                 <div className="relative min-h-[260px] overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-6">
